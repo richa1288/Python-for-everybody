@@ -1,0 +1,30 @@
+word = 'brontosaurus'
+d = dict()
+for c in word:
+if c not in d:
+d[c] = 1
+else:
+d[c] = d[c] + 1
+print(d)
+
+
+# loop in dict
+counts = { 'chuck' : 1 , 'annie' : 42, 'jan': 100}
+lst = list(counts.keys())
+print(lst)
+lst.sort()
+for key in lst:
+print(key, counts[key])
+
+# Condition in dict
+counts = { 'chuck' : 1 , 'annie' : 42, 'jan': 100}
+for key in counts:
+if counts[key] > 10 :
+print(key, counts[key])
+
+# loop in dict
+
+counts = { 'chuck' : 1 , 'annie' : 42, 'jan': 100}
+for key in counts:
+    if counts[key] > 10 :
+        print(key, counts[key])
